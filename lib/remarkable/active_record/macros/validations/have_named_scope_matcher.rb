@@ -56,7 +56,7 @@ module Remarkable # :nodoc:
           return true if @scope_opts.empty?
           return true if @scope.proxy_options == @scope_opts
           
-          @missing = "#{subject_name} didn't scope itself to #{@scope_opts.inspect}"
+          @missing = "#{subject_name} didn't scope itself to #{@scope_opts.inspect} but #{@scope.proxy_options.inspect}"
           return false
         end
         
